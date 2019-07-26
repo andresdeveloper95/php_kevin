@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD</title>
+</head>
+<body>
+	<h1>CRUD EN php<h1/>
+
+	<form method="post" name="formulario" action= "insertar.php">
+
+		Cedula:<input type="text" name="txtcedula" placeholder="Ingrese la cedula" onkeypress="if((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 13 || event.keyCode > 13)) event.returnValue = false;" maxlength="12" required>
+
+		Nombre:<input type="text" name="txttexto" placeholder=" Ingrese el nombre" onKeypress="if ((event.keyCode < 65 || event.keyCode > 90) && (event.keyCode < 97 || event.keyCode > 122) && (event.keyCode < 13 || event.keyCode > 13) && (event.keyCode < 32 || event.keyCode > 32)) event.returnValue = false;" maxLength="30" required>
+
+		<input type="submit" name="btnguardar" value="Crear"required>
+		
+	</form>
+	
+	<form method="post" action= "actualizar.php"><br/>
+
+		Cedula:<input type="text" name="txtcedula" placeholder="Ingrese la cedula" onkeypress="if((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 13 || event.keyCode > 13)) event.returnValue = false;" maxlength="12" required>
+
+		Nombre:<input type="text" name="txttexto" placeholder=" Ingrese el nombre" onKeypress="if ((event.keyCode < 65 || event.keyCode > 90) && (event.keyCode < 97 || event.keyCode > 122) && (event.keyCode < 13 || event.keyCode > 13) && (event.keyCode < 32 || event.keyCode > 32)) event.returnValue = false;" maxLength="30" required>
+
+ 		<input type="submit" name="btnactualizar" value="Actualizar">
+
+	</form>
+
+	<form method="post" action= "borrar.php"><br/>
+
+		Cedula:<input type="text" name="txtcedula" placeholder="Ingrese la cedula" onkeypress="if((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 13 || event.keyCode > 13)) event.returnValue = false;" maxlength="12" required>
+
+
+ 		<input type="submit" name="btneliminar" value="Eliminar">
+
+	</form>
+
+	<form method="post" action= "consultar.php"><br/>
+
+	<input type="submit" name="btnconsultar" value="Consultar">
+
+	</form>
+	
+</body>
+</html>
