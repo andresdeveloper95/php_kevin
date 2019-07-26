@@ -15,6 +15,7 @@
 
 		if($cedulasql==$cedula){
 			$conexion->query("DELETE FROM USUARIO WHERE cedula like '$cedula'");
+			
 			echo "Se ha eliminado la persona<br>";
 			echo "<a href='index.html'>volver</a>";
 		}
