@@ -21,6 +21,7 @@
 		else{
 			echo "La cedula no existe<br>";
 			echo "<a href='index.html'>volver</a>";
+			echo "la cosa";
 		}
 
 	}
